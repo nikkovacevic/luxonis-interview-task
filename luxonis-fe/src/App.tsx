@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import {ApartmentDto} from "./types/ApartmentDto";
 import {RequestDto} from "./types/RequestDto";
 import ApartmentCard from "./components/ApartmentCard";
+
+const API_URL = 'http://localhost:5000/apartments/getAll'
 function App() {
 
     const [apartments, setApartments] = useState<ApartmentDto[]>([]);
@@ -19,7 +21,7 @@ function App() {
             pageSize: pageSize
         };
 
-        axios.post('http://localhost:8080/apartments/getAll', requestDto)
+        axios.post(API_URL, requestDto)
             .then((res: any) => {
                 setApartments(res.data.results);
                 setCount(res.data.resultCount);
