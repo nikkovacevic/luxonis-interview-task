@@ -36,8 +36,6 @@ and [MaterialUI](https://mui.com/) for styling and the Pagination component.
 
 6. When everything was working locally I added the Dockerfiles and docker-compose.yml file to containerize everything.
 
-<img src="screenshots/mobileview.PNG" width="50%" alt="view on mobile">
-
 ## Usage
 
 ### Prerequisites
@@ -49,3 +47,5 @@ and [MaterialUI](https://mui.com/) for styling and the Pagination component.
 1. Clone the repository
 2. Run `docker-compose up` in the root directory to start the containers.
 3. Navigate to  http://127.0.0.1:8080 to view the page
+
+<img src="screenshots/mobileview.PNG" width="50%" alt="view on mobile">
