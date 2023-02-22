@@ -15,7 +15,7 @@ public class ApartmentService {
 
     public Page<Apartment> getAll(int page, int size) throws Exception {
         try {
-            return apartmentRepository.findAll(PageRequest.of(page-1, size));
+            return apartmentRepository.findAll(PageRequest.of(page, size));
         } catch (Exception e) {
             System.out.println("Error getting list of all apartments records");
             throw e;
